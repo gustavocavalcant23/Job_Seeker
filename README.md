@@ -1,6 +1,5 @@
 # Job Seeker 💼
 
-
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-blue" />
   <img src="https://img.shields.io/badge/Database-SQLite-lightgrey" />
@@ -64,6 +63,7 @@ job_seeker/
 │ ├── base_scraper.py
 │ ├── remotar_scraper.py
 │ └── nerdin_scraper.py
+│ └── trabalhabr_scraper.py
 │
 ├── job_reports/
 │
