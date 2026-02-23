@@ -109,7 +109,7 @@ Banco de dados SQLite:
 ## 1️⃣ Clonar o repositório
 
 ```
-git clone https://github.com
+git clone https://github.com/gustavocavalcant23/Job_Seeker.git
 
 cd job_seeker
 ```
@@ -227,5 +227,3 @@ Desenvolvedor Python
 # 📄 Licença
 
 Este projeto é para fins educacionais e de estudo.
-
----
