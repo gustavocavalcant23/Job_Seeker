@@ -26,7 +26,7 @@ class NerdinScraper(BaseScraper):
             link_tag = card.find("a", class_="btn-ver-vaga")
             href = link_tag["href"]
 
-            url_completa = "https://www.nerdin.com.br/" + href
+            url = "https://www.nerdin.com.br/" + href
 
             job_id = href.split("-")[-1].replace(".php", "")
 
@@ -34,7 +34,7 @@ class NerdinScraper(BaseScraper):
                 id=job_id,
                 title=job_title,
                 description="",
-                url=url_completa,
+                url=url,
                 origin='NERDIN'
             )
 

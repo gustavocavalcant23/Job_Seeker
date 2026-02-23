@@ -1,11 +1,12 @@
 from scrapers.remotar_scraper import RemotarScraper
 from scrapers.nerdin_scraper import NerdinScraper
+from scrapers.trabalhabr_scraper import TrabalhaBrScraper
 from database.db import JobRepository
 from reports.report_service import ReportService
 
 
 def main():
-    query = []
+    query = ['estagio ti']
 
     for q in query:
         if not q:
@@ -14,8 +15,11 @@ def main():
 
         all_jobs = []
 
-        scrapers = [RemotarScraper(q),
-                    NerdinScraper(q)]
+        scrapers = [
+            RemotarScraper(q),
+            NerdinScraper(q),
+            TrabalhaBrScraper(q)
+        ]
         
         db = JobRepository()
 
