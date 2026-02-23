@@ -62,7 +62,7 @@ job_seeker/
 ├── scrapers/
 │ ├── base_scraper.py
 │ ├── remotar_scraper.py
-│ └── nerdin_scraper.py
+│ ├── nerdin_scraper.py
 │ └── trabalhabr_scraper.py
 │
 ├── job_reports/
