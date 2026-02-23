@@ -1,9 +1,12 @@
 # Job Seeker 💼
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![SQLite](https://img.shields.io/badge/Database-SQLite-lightgrey)
-![Architecture](https://img.shields.io/badge/Architecture-Modular-green)
-![Status](https://img.shields.io/badge/Status-Active-success)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue" />
+  <img src="https://img.shields.io/badge/Database-SQLite-lightgrey" />
+  <img src="https://img.shields.io/badge/Architecture-Modular-green" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+</p>
 
 > Agregador automatizado de vagas em tecnologia com scraping multi-fonte, persistência local e geração automática de relatórios Excel.
 
@@ -43,6 +46,31 @@ Permitir que o usuário configure buscas de vagas de emprego e automaticamente:
 # 🏗️ Arquitetura
 
 O projeto segue uma estrutura modular organizada por responsabilidades:
+
+```
+
+job_seeker/
+│
+├── database/
+│ └── db.py
+│
+├── models/
+│ └── jobs.py
+│ 
+├── reports/
+│ └── report_service.py
+│
+├── scrapers/
+│ ├── base_scraper.py
+│ ├── remotar_scraper.py
+│ └── nerdin_scraper.py
+│
+├── job_reports/
+│
+├── jobs.db
+├── main.py
+└── requirements.txt
+```
 
 ---
 
